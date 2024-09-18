@@ -3,4 +3,5 @@ import { UserController } from "../controllers/userController.js";
 
 export const userRouter = Router();
 
-userRouter.get("/", UserController.register);
+userRouter.post("/register", UserController.register);
+userRouter.post("/login", UserController.login);
